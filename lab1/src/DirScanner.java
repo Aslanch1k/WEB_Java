@@ -12,7 +12,7 @@ public class DirScanner {
         Scanner dir = new Scanner(System.in);
         String strDir = dir.nextLine();
         if (!Files.exists(Paths.get(strDir))){
-            while (!Files.exists(Paths.get(dir.nextLine()))) {
+            while (!Files.exists(Paths.get(strDir))) {
                 System.out.print("Wrong dir");
                 System.out.print("Input dir for searching java files: ");
                 strDir = dir.nextLine();
